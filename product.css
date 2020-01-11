@@ -1,0 +1,149 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    /* background: url(hero.jpg) no-repeat 50% 50%;
+    background-size: cover; */
+    overflow: hidden;
+}
+
+.template-products{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    overflow: hidden;
+}
+.template-products .wines {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: #161616;
+    z-index: 1;
+    opacity: 0;
+}
+
+.template-products #wrap {
+    position: absolute;
+    left: 0%;
+    top: -8%;
+    width: 150%;
+    height: 100%;
+    display: flex;
+    margin: 0 25%;
+}
+
+.template-products .block {
+    position: relative;
+    width: 25%;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    z-index: 2;
+    transform: scale(0.97);
+}
+
+.template-products .product {
+    position: relative;
+    display: block;
+    max-width: 80%;
+}
+
+.template-products .product img {
+    position: relative;
+    display: block;
+    width: 80%;
+    height: auto;
+    z-index: 2;
+}
+
+.template-products .txt {
+    position: absolute;
+    top: 104%;
+    left: 2%;
+    width: 80%;
+    opacity: 0;
+    text-align: center;
+    font-family: Helvetica;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #fff;
+    z-index: 1;
+    transform: scaleY(1) translateY(-30px);
+    transition: transform .2s, opacity .5s;
+}
+
+.template-products .txt p {
+    margin-bottom: 20px;
+}
+
+.template-products .wines button {
+    margin-top: 10px;
+    padding: 16px 28px;
+}
+
+.template-products h1 {
+    font-family: "Smythe";
+    color: #ecaa5d;
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.template-products .block:hover .txt {
+    opacity: 1;
+    transform: scaleY(1) translateY(0);
+}
+
+.template-products .close-btn {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 2.5em;
+    letter-spacing: 2px;
+    font-size: 0.8em;
+    font-family: Helvetica;
+    color: #765936;
+    transition: 0.3s;
+    z-index: 3;
+    cursor: pointer;
+}
+
+.template-products .close-btn:hover {
+    color: #e7ad68;
+    transition: 0.3s;
+}
+
+.template-products button {
+    background: none;
+    padding: 20px 48px;
+    color: #c89253;
+    border: 1px solid #c89253;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    transition: all .4s ease;
+}
+
+.template-products button:focus {
+    outline: none;
+    border: none;
+}
+
+.template-products button:hover {
+    background: #c89253;
+    color: #161616;
+}
+
+#closeProduct{
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    z-index: 1000;
+    color: #888888;
+}
+#closeProduct:hover{
+    cursor: pointer;
+    color: #fff;
+}
