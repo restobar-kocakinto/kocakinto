@@ -213,3 +213,90 @@ body{
     text-align: justify;
     margin-bottom: 30px;
 }
+
+/* TEMPLATE CONTACT */
+#closeContact{
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    z-index: 1000;
+    color: #888888;
+}
+#closeContact:hover{
+    cursor: pointer;
+    color: #fff;
+}
+.content-contact{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: auto 600px;
+    grid-template-rows: auto;
+    grid-template-areas: "c-img c-form";
+}
+.card-img{
+    grid-area: c-img;
+}
+.card-img .card-img-color{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(14, 10, 10, 0.363);
+}
+.card-form{
+    grid-area: c-form;
+    margin: 80px 50px;
+    /* background: rgb(158, 116, 116);     */
+    font-family: 'Roboto Mono', monospace;
+    color: #e7e7e7;
+}
+.card-form *{
+    box-sizing: border-box;
+}
+.card-form .card-title{
+    padding: 20px;
+    text-align: center;
+}
+.card{
+    padding: 10px;
+}
+.card-header, .card-body{
+    border: 1px solid #e3e3e35d;
+    padding: 8px;
+}
+.card-header p{
+    font-size: 14px;
+}
+.form-row{
+    display: flex;
+}
+.form-group{
+    width: 100%;
+}
+input, textarea{
+    /* font-family: 'Roboto Mono', monospace; */
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    border: none;
+    background: none;
+    color: #fff;
+    font-size: 15px;
+    padding: 0 10px 0 15px;
+    outline: none;
+}
+.card-btn{
+    text-align: center;
+}
+button{
+    width: 100%;
+    margin: auto;
+    padding: 12px;
+    border: 1px solid #1f9743;
+    background: #1f9743;
+    color: #fff;
+    font-weight: bold;
+    outline: none;
+}
+button:hover{
+    cursor: pointer;
+    border: 1px solid #187a36;
+    background: #187a36;
+}
